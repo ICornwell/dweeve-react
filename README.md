@@ -1,3 +1,12 @@
+# dweeve-react - the interactive playground for dweeve / MuleSoft Dataweave #
+
+Uses the https://github.com/ICornwell/dweeve project to provide the engine, straight out of the box (git reference in package.json).
+
+This replaces the previous dweeve-browser Angular based project, that used a local, tweaked version of the main engine.
+
+Its fairly standard React with React-Ace and React-Terminal (forked for some extras)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
