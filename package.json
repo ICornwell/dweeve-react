@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish-docs": "rm -rf ./docs && cp -r ./build ./docs"
+    "publish-docs": "rm -rf ./docs && cp -r ./build ./docs && cp ./docs-CNAME ./docs/CNAME"
   },
   "eslintConfig": {
     "extends": "react-app"
