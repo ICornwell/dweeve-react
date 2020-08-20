@@ -6,6 +6,8 @@ This replaces the previous dweeve-browser Angular based project, that used a loc
 
 Its fairly standard React with React-Ace and React-Terminal (forked for some extras)
 
+Now with DataWeave specific syntax highlighting in the editor.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
