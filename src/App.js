@@ -14,6 +14,9 @@ import { TerminalContextProvider } from "react-terminal"
 
 import ReactResizeDetector from 'react-resize-detector';
 
+import xml2js from 'dweeve/lib/exe/xmldom2jsobj'
+import {DOMParser} from 'xmldom'
+
 import style from './App.css';
 
 let cx = classNames.bind(style);
@@ -60,6 +63,13 @@ function App() {
 
     dweevefns.setResourceLoader((path, type) => findResource(env, path))
 
+    if (env.payload.startsWith('<')) {
+      const doc = new DOMParser().parseFromString(env.payload)
+      const pl = xml2js.toJsObj(doc)
+
+      console.log(pl)
+    }
+
     const response = dweeve.runWithTimes(env.code, env.payload, {}, {})
     const times = response.times
     const result = response.result
@@ -105,7 +115,6 @@ function App() {
     <TerminalContextProvider>
       <div className="App">
         <div className={cx('container')}>
-
           <div className={cx('header')} height="100px" style={{ display: "flex", textAlign: "center" }}>
             <SideBar caption={"Examples <--"} onSelect={onSelectExample} ></SideBar>
             <h3 style={{ flex: "auto" }} >dweeve-react-doofer</h3>

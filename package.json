@@ -19,7 +19,8 @@
     "react-resize-panel": "^0.3.5",
     "react-scripts": "3.4.3",
     "react-terminal": "https://github.com/ICornwell/react-terminal",
-    "strip-comments": "https://github.com/ICornwell/strip-comments"
+    "strip-comments": "https://github.com/ICornwell/strip-comments",
+    "xmldom": "^0.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
