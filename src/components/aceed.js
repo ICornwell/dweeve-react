@@ -4,49 +4,13 @@ import AceEditor from "react-ace";
 /*eslint-disable no-alert, no-console */
 import "ace-builds/src-min-noconflict/ext-searchbox";
 import "ace-builds/src-min-noconflict/ext-language_tools";
-import "ace-builds/src-noconflict/mode-jsx";
+//import "dwlAceMode/mode-dwl";
+//import "dwlAceMode/theme-dweeve";
+import "ace-builds/src-noconflict/mode-json5";
+import "ace-builds/src-noconflict/theme-github";
 
 import "ace-builds/webpack-resolver";
-
-
-const languages = [
-  "javascript",
-  "java",
-  "python",
-  "xml",
-  "ruby",
-  "sass",
-  "markdown",
-  "mysql",
-  "json",
-  "html",
-  "handlebars",
-  "golang",
-  "csharp",
-  "elixir",
-  "typescript",
-  "css"
-];
-
-const themes = [
-  "monokai",
-  "github",
-  "tomorrow",
-  "kuroir",
-  "twilight",
-  "xcode",
-  "textmate",
-  "solarized_dark",
-  "solarized_light",
-  "terminal"
-];
-
-languages.forEach(lang => {
-  require(`ace-builds/src-noconflict/mode-${lang}`);
-  require(`ace-builds/src-noconflict/snippets/${lang}`);
-});
-
-themes.forEach(theme => require(`ace-builds/src-noconflict/theme-${theme}`));
+import "dwlAceMode/webpack-resolver";
 
 
 const AceEd = React.forwardRef((props, ref) => {
@@ -64,8 +28,8 @@ const AceEd = React.forwardRef((props, ref) => {
 
   return (
               <AceEditor height="100%" width="100%"
-                mode="javascript"
-                theme="github"
+                mode="dwl"
+                theme="dweeve"
                 ref={ref}
                 value={value.ace}
                 onChange={onChange}

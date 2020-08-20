@@ -23,8 +23,8 @@
     "xmldom": "^0.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cp -r ./dwlAceMode ./node_modules/dwlAceMode && react-scripts start",
+    "build": "cp -r ./dwlAceMode ./node_modules/dwlAceMode && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "publish-docs": "rm -rf ./docs && cp -r ./build ./docs && cp ./docs-CNAME ./docs/CNAME"
