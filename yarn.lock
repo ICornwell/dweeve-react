@@ -4181,7 +4181,7 @@ duplexify@^3.4.2, duplexify@^3.6.0:
 
 "dweeve@https://github.com/ICornwell/dweeve.git":
   version "0.0.1"
-  resolved "https://github.com/ICornwell/dweeve.git#6946dadfe282b69d5cbb07fa23adb9d5938b1fe2"
+  resolved "https://github.com/ICornwell/dweeve.git#bd153df1fc8afede8bae9bc2b4894036048b52d1"
   dependencies:
     "@babel/core" "^7.11.1"
     date-fns "^2.9.0"
