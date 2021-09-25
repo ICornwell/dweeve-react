@@ -20,7 +20,7 @@
     "react-scripts": "3.4.3",
     "react-terminal": "https://github.com/ICornwell/react-terminal",
     "strip-comments": "https://github.com/ICornwell/strip-comments",
-    "xmldom": "^0.5.0"
+    "xmldom": "^0.6.1"
   },
   "scripts": {
     "start": "cp -r ./dwlAceMode ./node_modules/dwlAceMode && react-scripts start",
